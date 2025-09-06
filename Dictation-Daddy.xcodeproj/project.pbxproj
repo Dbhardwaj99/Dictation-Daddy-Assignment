@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		525CC7202E6ABE9500D991D0 /* Dictation-Daddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dictation-Daddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		525CC7322E6ABFDA00D991D0 /* Dictation-Daddy-Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Dictation-Daddy-Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52B175EE2E6CCAC700E04FDC /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -110,7 +109,6 @@
 				525CC7222E6ABE9500D991D0 /* Dictation-Daddy */,
 				525CC7332E6ABFDA00D991D0 /* Dictation-Daddy-Keyboard */,
 				525CC7212E6ABE9500D991D0 /* Products */,
-				52B176452E6CD54300E04FDC /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,14 +119,6 @@
 				525CC7322E6ABFDA00D991D0 /* Dictation-Daddy-Keyboard.appex */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		52B176452E6CD54300E04FDC /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				52B175EE2E6CCAC700E04FDC /* Config.xcconfig */,
-			);
-			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
