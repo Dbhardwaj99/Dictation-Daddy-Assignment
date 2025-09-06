@@ -1,21 +1,26 @@
-//
-//  ContentView.swift
-//  Dictation-Daddy
-//
-//  Created by MacBook Pro on 05/09/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var navigationState: NavigationState
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                NavigationLink(destination: RecorderView(openedFromContentView: true)) {
+                    Text("Go to Recorder")
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                
+                // Hidden NavigationLink for programmatic navigation
+                NavigationLink(destination: RecorderView(openedFromContentView: false), isActive: $navigationState.navigateToRecorderViaKB) {
+                    EmptyView()
+                }
+            }
+            .padding()
         }
-        .padding()
     }
 }
 

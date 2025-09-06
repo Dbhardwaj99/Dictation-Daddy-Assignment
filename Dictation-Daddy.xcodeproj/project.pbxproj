@@ -6,14 +6,75 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		525CC7392E6ABFDA00D991D0 /* Dictation-Daddy-Keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 525CC7322E6ABFDA00D991D0 /* Dictation-Daddy-Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		525CC7412E6AD3DA00D991D0 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 525CC7402E6AD3DA00D991D0 /* KeyboardKit */; };
+		52B175EF2E6CCAC700E04FDC /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 52B175EE2E6CCAC700E04FDC /* Config.xcconfig */; };
+		52B175F02E6CCAC700E04FDC /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 52B175EE2E6CCAC700E04FDC /* Config.xcconfig */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		525CC7372E6ABFDA00D991D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 525CC7182E6ABE9500D991D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 525CC7312E6ABFDA00D991D0;
+			remoteInfo = "Dictation-Daddy-Keyboard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		525CC73E2E6ABFDA00D991D0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				525CC7392E6ABFDA00D991D0 /* Dictation-Daddy-Keyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		525CC7202E6ABE9500D991D0 /* Dictation-Daddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dictation-Daddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		525CC7322E6ABFDA00D991D0 /* Dictation-Daddy-Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Dictation-Daddy-Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B175EE2E6CCAC700E04FDC /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		525CC73A2E6ABFDA00D991D0 /* Exceptions for "Dictation-Daddy-Keyboard" folder in "Dictation-Daddy-Keyboard" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 525CC7312E6ABFDA00D991D0 /* Dictation-Daddy-Keyboard */;
+		};
+		52B175E22E6CAC2900E04FDC /* Exceptions for "Dictation-Daddy" folder in "Dictation-Daddy" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 525CC71F2E6ABE9500D991D0 /* Dictation-Daddy */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		525CC7222E6ABE9500D991D0 /* Dictation-Daddy */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				52B175E22E6CAC2900E04FDC /* Exceptions for "Dictation-Daddy" folder in "Dictation-Daddy" target */,
+			);
 			path = "Dictation-Daddy";
+			sourceTree = "<group>";
+		};
+		525CC7332E6ABFDA00D991D0 /* Dictation-Daddy-Keyboard */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				525CC73A2E6ABFDA00D991D0 /* Exceptions for "Dictation-Daddy-Keyboard" folder in "Dictation-Daddy-Keyboard" target */,
+			);
+			path = "Dictation-Daddy-Keyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +87,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		525CC72F2E6ABFDA00D991D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525CC7412E6AD3DA00D991D0 /* KeyboardKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		525CC7172E6ABE9500D991D0 = {
 			isa = PBXGroup;
 			children = (
+				52B175EE2E6CCAC700E04FDC /* Config.xcconfig */,
 				525CC7222E6ABE9500D991D0 /* Dictation-Daddy */,
+				525CC7332E6ABFDA00D991D0 /* Dictation-Daddy-Keyboard */,
 				525CC7212E6ABE9500D991D0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				525CC7202E6ABE9500D991D0 /* Dictation-Daddy.app */,
+				525CC7322E6ABFDA00D991D0 /* Dictation-Daddy-Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +127,12 @@
 				525CC71C2E6ABE9500D991D0 /* Sources */,
 				525CC71D2E6ABE9500D991D0 /* Frameworks */,
 				525CC71E2E6ABE9500D991D0 /* Resources */,
+				525CC73E2E6ABFDA00D991D0 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				525CC7382E6ABFDA00D991D0 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				525CC7222E6ABE9500D991D0 /* Dictation-Daddy */,
@@ -69,6 +143,29 @@
 			productName = "Dictation-Daddy";
 			productReference = 525CC7202E6ABE9500D991D0 /* Dictation-Daddy.app */;
 			productType = "com.apple.product-type.application";
+		};
+		525CC7312E6ABFDA00D991D0 /* Dictation-Daddy-Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525CC73B2E6ABFDA00D991D0 /* Build configuration list for PBXNativeTarget "Dictation-Daddy-Keyboard" */;
+			buildPhases = (
+				525CC72E2E6ABFDA00D991D0 /* Sources */,
+				525CC72F2E6ABFDA00D991D0 /* Frameworks */,
+				525CC7302E6ABFDA00D991D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				525CC7332E6ABFDA00D991D0 /* Dictation-Daddy-Keyboard */,
+			);
+			name = "Dictation-Daddy-Keyboard";
+			packageProductDependencies = (
+				525CC7402E6AD3DA00D991D0 /* KeyboardKit */,
+			);
+			productName = "Dictation-Daddy-Keyboard";
+			productReference = 525CC7322E6ABFDA00D991D0 /* Dictation-Daddy-Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,6 +180,9 @@
 					525CC71F2E6ABE9500D991D0 = {
 						CreatedOnToolsVersion = 16.4;
 					};
+					525CC7312E6ABFDA00D991D0 = {
+						CreatedOnToolsVersion = 16.4;
+					};
 				};
 			};
 			buildConfigurationList = 525CC71B2E6ABE9500D991D0 /* Build configuration list for PBXProject "Dictation-Daddy" */;
@@ -94,12 +194,16 @@
 			);
 			mainGroup = 525CC7172E6ABE9500D991D0;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				525CC73F2E6AD3DA00D991D0 /* XCRemoteSwiftPackageReference "KeyboardKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 525CC7212E6ABE9500D991D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				525CC71F2E6ABE9500D991D0 /* Dictation-Daddy */,
+				525CC7312E6ABFDA00D991D0 /* Dictation-Daddy-Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -109,6 +213,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52B175EF2E6CCAC700E04FDC /* Config.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525CC7302E6ABFDA00D991D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B175F02E6CCAC700E04FDC /* Config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +235,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		525CC72E2E6ABFDA00D991D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		525CC7382E6ABFDA00D991D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 525CC7312E6ABFDA00D991D0 /* Dictation-Daddy-Keyboard */;
+			targetProxy = 525CC7372E6ABFDA00D991D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		525CC7292E6ABE9700D991D0 /* Debug */ = {
@@ -248,14 +376,21 @@
 		};
 		525CC72C2E6ABE9700D991D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52B175EE2E6CCAC700E04FDC /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Dictation-Daddy/Dictation-Daddy.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4Q398HUTA3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dictation-Daddy/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dictation Daddy";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires access to the microphone to record audio.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -276,14 +411,21 @@
 		};
 		525CC72D2E6ABE9700D991D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52B175EE2E6CCAC700E04FDC /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Dictation-Daddy/Dictation-Daddy.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4Q398HUTA3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dictation-Daddy/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dictation Daddy";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires access to the microphone to record audio.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -296,6 +438,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.imdb.Dictation-Daddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		525CC73C2E6ABFDA00D991D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52B175EE2E6CCAC700E04FDC /* Config.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Dictation-Daddy-Keyboard/Dictation-Daddy-Keyboard.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Q398HUTA3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dictation-Daddy-Keyboard/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dictation-Daddy-Keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.imdb.Dictation-Daddy.Dictation-Daddy-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		525CC73D2E6ABFDA00D991D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52B175EE2E6CCAC700E04FDC /* Config.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Dictation-Daddy-Keyboard/Dictation-Daddy-Keyboard.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Q398HUTA3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dictation-Daddy-Keyboard/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dictation-Daddy-Keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.imdb.Dictation-Daddy.Dictation-Daddy-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,7 +519,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		525CC73B2E6ABFDA00D991D0 /* Build configuration list for PBXNativeTarget "Dictation-Daddy-Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525CC73C2E6ABFDA00D991D0 /* Debug */,
+				525CC73D2E6ABFDA00D991D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		525CC73F2E6AD3DA00D991D0 /* XCRemoteSwiftPackageReference "KeyboardKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KeyboardKit/KeyboardKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		525CC7402E6AD3DA00D991D0 /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 525CC73F2E6AD3DA00D991D0 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 525CC7182E6ABE9500D991D0 /* Project object */;
 }
